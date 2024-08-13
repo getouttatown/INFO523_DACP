@@ -38,4 +38,5 @@ dapc_output <- dapc(features_matrix_for_PCA, factors_for_DA, n.pca = 3, n.da = 2
 colors <- brewer.pal(3, "Set2")  # Colorblind-friendly colors
 scatter(dapc_output, pch = 7, cstar = 0, col = colors,
         scree.da = FALSE, legend = TRUE, solid = 0.7)
+# Add labels
 title(main = "Penguin DAPC Results", xlab = "DA Function 1", ylab = "DA Function 2")
